@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% include head.html %}
+<body>
+<!-- Start Wrapper -->
+<div id="wrapper">
+   <!--Start Wrapper Sub Elements -->
+   <div class="w-main">
+      <div class="w-top">&nbsp;</div>
+      <div class="w-content">
+         <div class="main-wrapper">
+            <!-- Start Header -->
+            <div id="header">
+               <div class="top">
+                  <!-- Start Logo -->
+                  <div class="logo">
+                      <a href="/">
+                          <img src="{{ "/images/logo.png"| prepend: site.baseurl }}" height="70" alt="ТОВ АГРОМЕХАНІК"/>
+                      </a>
+                  </div>
+                  <!-- End Logo -->
+                  <!-- Start Call Us Section -->
+                  <div class="call-box-wrapper">
+                      <strong>Зателефонуйте:</strong>
+                      <div class="phones">
+                          0532 66-29-43<br>
+                          0532 66-19-71<br>
+                          0532 66-19-71<br>
+                      </div>
+                  </div>
+                  <!-- End Call Us Section -->
+               </div>
+               <!-- Start Nav Holder -->
+               <div class="holder">
+                  <!-- Start Nav -->
+                  <ul id="nav">
+                     {% include _menu.html %}
+                  </ul>
+                  <!-- End Nav -->
+               </div>
+               <!-- End Nav Holder -->
+            </div>
+            <!-- End Header -->
+             
+            {{ content }}
+
+
+
+            <div class="lower-section lower-section-home">
+               <div class="col-holder">
+                  <div class="holder">
+                     <!-- Start Column -->
+                     <div class="col">
+                        <h3>Комбайни</h3>
+                        <p>Ми маємо запасні частини до комбайнів: "Дон-1500", СК-5, "Нива", "Джон-Дир" та інші.</p>
+                        <div class="link-holder">
+                            <a href="/services/#kombainu" class="more-dark">Докладніше</a>
+                        </div>
+                     </div>
+                     <!-- End Column -->
+                     <!-- Start Column -->
+                     <div class="col">
+                        <h3>Трактори</h3>
+                        <p>Ми маємо запасні частини до тракторів: Т-150, МТЗ, ЮМЗ, ДТ-75</p>
+                        <div class="link-holder">
+                            <a href="/services/#traktoru" class="more-dark">Докладніше</a>
+                        </div>
+                     </div>
+                     <!-- End Column -->
+                     <!-- Start Column -->
+                     <div class="col">
+                        <h3>Автомобілі</h3>
+                        <p>У нас також з'явилися деталі для автомобілів: ГАЗ, УАЗ, ЗИЛ, МАЗ</p>
+                        <div class="link-holder">
+                            <a href="/services/#avtomobili" class="more-dark">Докладніше</a>
+                        </div>
+                     </div>
+                     <!-- End Column -->
+                  </div>
+               </div>
+               <div class="bottom">
+                  <div class="txt-holder">
+                     <p>Наша адреса: м. Полтава, вул. Половка, 78-а <a href="/contacts/" class="more-dark">Подивитися...</a></p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="w-bottom"></div>
+   </div>
+   <!--End Wrapper Sub Elements -->
+   <!-- Start Footer -->
+   <div id="footer">
+      <!--Start Footer Nav -->
+      <div class="footer-nav">
+         <div class="w1">
+            <div class="w2">
+               <ul class="menu">
+                  {% include _menu.html %}
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--End Footer Nav -->
+      <p>&copy; 2014 <a href="#">ТОВ АГРОМЕХАНІК</a>.</p>
+   </div>
+   <!-- End Footer -->
+</div>
+<!-- End Wrapper -->
+</body>
+
+</html>

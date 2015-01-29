@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<!-- Start Main -->
+    <div id="main">
+        <!-- Start Slider -->
+        <div id="slider-container">
+            <ul id="slider-box">
+                <!-- Slide 1 -->
+                <li>
+                    <div class="slide slide-first">
+                        <h1><span>Запасні частини</span></h1>
+                        <h2><span>до комбайнів</span></h2>
+                    </div>
+                </li>
+                <!-- End slide 1 -->
+                <!-- Slide 2 -->
+                <li>
+                    <div class="slide slide-second">
+                        <h1><span>Запасні частини</span></h1>
+                        <h2><span>до автомобілів</span></h2>
+                    </div>
+                </li>
+                <!-- End slide 1 -->
+                <!-- Slide 2 -->
+                <li>
+                    <div class="slide slide-first" style="background-image: url(images/slider/screenshot1.jpg);">
+                        <h1><span>Деталі для тракторів</span></h1>
+                        <h2><span>Т-150, МТЗ, ЮМЗ, ДТ-75</span></h2>
+                    </div>
+                </li>
+                <!-- End slide 2 -->
+            </ul>
+            <!-- Start Slider Nav-->
+            <div class="slide-pager-container">
+                <div id="slide-pager"></div>
+            </div>
+            <!-- End Slider Nav-->
+        </div>
+        <!-- End Slider -->
+        <!-- Start Lower Banner Section -->
+        <div class="lower-banner">
+            <div class="holder">
+
+            </div>
+        </div>
+        <!-- End Lower Banner Section -->
+    </div>
+    <!-- End Main -->
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script>
+        $(function(){
+            $('#slider-box').cycle({
+                fx:     'fade',
+                speed:  '700',
+                timeout: 6000,
+                pager:  '#slide-pager'
+            });
+        });
+    </script>

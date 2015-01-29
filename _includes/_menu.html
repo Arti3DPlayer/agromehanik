@@ -1,0 +1,12 @@
+<li class="{% if '/' == request.get_full_path %}selected{% endif %}">
+    <a href="/"><span class="c"><span>Головна</span></span></a>
+</li>
+<li class="{% if '/about/' == request.get_full_path %}selected{% endif %}">
+    <a href="/about/"><span class="c"><span>Про нас</span></span></a>
+</li>
+<li class="{% if '/services/' == request.get_full_path %}selected{% endif %}">
+    <a href="/services/"><span class="c"><span>Наші послуги</span></span></a>
+</li>
+<li class="{% if '/contacts/' == request.get_full_path %}selected{% endif %}">
+    <a href="/contacts/"><span class="c"><span>Контакти</span></span></a>
+</li>

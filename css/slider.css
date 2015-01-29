@@ -1,0 +1,79 @@
+#slider-container {
+    height:258px; width:940px;
+    overflow:hidden;
+    position:relative;
+    margin:0px;
+    padding:0px;
+}
+#slider-box { position: relative; width: 940px; height: 258px; list-style:none; margin:0px; padding:0px; }
+#slider-box li { position: absolute; top: 0px; left: 0px; width: 940px; height: 258px; left:0; display:none;}
+
+/* Welcome Banner */
+#slider-box .slide.slide-first {
+    background-image: url(../images/slider/bg-main.jpg);
+    background-repeat: no-repeat;
+    height:258px;
+    overflow:hidden;
+    position:relative;
+}
+#slider-box .slide.slide-second {
+    background-image: url(../images/slider/screenshot2.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -60px;
+    height:258px;
+    overflow:hidden;
+    position:relative;
+}
+#slider-box .slide h1 {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+}
+
+#slider-box .slide h1 span {
+   color: white;
+   font: bold 24px/45px;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+#slider-box .slide h2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+#slider-box .slide h2 span {
+   color: white;
+   font: bold 18px/36px;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+/* Corner */
+.slider-corner { position:absolute; top:0px; left:853px; width:87px; height:87px; background-image: url(../images/slider/corner.png); background-repeat: no-repeat; }
+
+/* Buttons */
+#slider-box .button-position { padding-left:42px; }
+#slider-box a.banner-button { display: block; float: left; height: 26px; margin-right: 8px; padding-right: 13px; background-attachment: scroll; background-color: transparent; background-image: url(../images/slider/button-bg.gif); background-repeat: no-repeat; background-position: right -26px; cursor:pointer; }
+#slider-box a.banner-button span { float:left; position: relative; display: block; white-space: nowrap; height:26px; background-color: transparent; background-image: url(../images/slider/button-bg.gif); background-repeat: no-repeat; padding-top: 5px; padding-right: 0; padding-left: 13px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; text-decoration: none; text-shadow: 0px 1px 0px #35621d; }
+#slider-box a.banner-button:hover { background-image: url(../images/slider/button-bg-hover.gif); }
+#slider-box a.banner-button:hover span { background-image: url(../images/slider/button-bg-hover.gif); }
+#slider-box a.banner-button2 { display: block; float: left; height: 26px; margin-right: 8px; padding-right: 13px; background-attachment: scroll; background-color: transparent; background-image: url(../images/slider/button-bg2.gif); background-repeat: no-repeat; background-position: right -26px; cursor:pointer; }
+#slider-box a.banner-button2 span { float:left; position: relative; display: block; white-space: nowrap; height:26px; background-color: transparent; background-image: url(../images/slider/button-bg2.gif); background-repeat: no-repeat; padding-top: 5px; padding-right: 0; padding-left: 13px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #959594; text-decoration: none; text-shadow: 0px 1px 0px #000000; }
+#slider-box a.banner-button2:hover { background-image: url(../images/slider/button-bg2-hover.gif); }
+#slider-box a.banner-button2:hover span { background-image: url(../images/slider/button-bg2-hover.gif); }
+
+/* Slider Nav */
+.slide-pager-container { height:15px; width:928px; text-align:right; z-index:9999; display:block; position:absolute; top: 230px; }
+#slide-pager { float:right; text-align:right; }
+#slide-pager a, #slide-pager a:visited { width:10px; height:10px; float:left; margin:4px; background:url(../images/slider/navigator.png) 0 0 no-repeat; display:block; font-size:1px; text-indent:9999px;text-decoration:none; overflow:hidden; cursor:pointer }
+#slide-pager a:hover { background-position:0 -10px; }
+#slide-pager a.active { background-position:0 -20px; outline:none; }
+#slide-pager a.activeSlide { background-position:0 -20px; outline:none; }
