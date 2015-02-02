@@ -16,9 +16,48 @@ title: ТОВ "Агромеханік" - Про нас
 <p>За роки роботи постійними покупцями <strong>ТОВ "Агромеханік"</strong> стали підприємства й організації різних галузей: аграрні холдинги й фермерські господарства, державні та комунальні підприємства, приватні особи.</p>
 <p>Клієнтська база <strong>ТОВ "Агромеханік"</strong> - це понад 1000 корпоративних покупців по всій Україні.</p>
 <p><strong>ТОВ "Агромеханік"</strong> пропонує споживачеві якісний та доступний товар з гарантією та відстрочкою платежу для постійних клієнтів.</p>
-<p><img style="border: 1px solid #ccc;" src="{{ "/images/building.jpg"| prepend: site.baseurl }}" alt="" width="600" height="398" /></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<div id="slider-services">
+            <ul id="slider-services-box">
+                <!-- Slide 1 -->
+                <li>
+                    <div class="slide" style="background-image: url({{ '/images/slider/building.jpg'| prepend: site.baseurl }});">
+                    </div>
+                </li>
+                <!-- End slide 1 -->
+                <!-- Slide 2 -->
+                <li>
+                    <div class="slide" style="background-image: url({{ '/images/slider/DSC_0212.jpg'| prepend: site.baseurl }});">
+                    </div>
+                </li>
+                <li>
+                    <div class="slide" style="background-image: url({{ '/images/slider/DSC_0214.jpg'| prepend: site.baseurl }});">
+                    </div>
+                </li>
+                <!-- End slide 1 -->
+            </ul>
+            <!-- Start Slider Nav-->
+            <div class="slide-pager-container" style="width:100%; top: 370px;">
+                <div id="slide-pager"></div>
+            </div>
+            <!-- End Slider Nav-->
+        </div>
+        <!-- End Slider -->
+        <br><br>
+
+        <script type="text/javascript" src="{{ "/js/jquery.cycle.all.min.js"| prepend: site.baseurl }}"></script>
+            <script>
+                $(function(){
+                    $('#slider-services-box').cycle({
+                        fx:     'fade',
+                        speed:  '700',
+                        timeout: 6000,
+                        pager:  '#slide-pager'
+                    });
+                });
+            </script>
+
+
+
                 </div>
             </div>
             <div id="sidebar">

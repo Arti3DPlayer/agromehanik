@@ -186,7 +186,7 @@ form, fieldset { margin:0; padding:0; border:none; }
 }
 .sidebar-main:after { clear: both; content:''; display: block; }
 .sidebar-main a:hover { color:#323232; }
-.sidebar-main .leftcolumn { float:left; width:588px }
+.sidebar-main .leftcolumn { float:left; width:598px }
 
 /* Page Content */
 .pagecontent h2 { color:#252525; line-height:26px; font-size:18px; font-weight:normal; margin-top: 0; margin-right: 0; margin-bottom: 22px; margin-left: 0; }
